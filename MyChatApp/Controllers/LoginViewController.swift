@@ -15,6 +15,12 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "LoginToChat", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LoginToChat" {
+            guard let resultVC = segue.destination as? ChatViewController else { return }
+        }
+    }
 }

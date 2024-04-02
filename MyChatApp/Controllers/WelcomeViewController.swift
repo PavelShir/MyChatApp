@@ -21,7 +21,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "GoToReister", sender: self)
+        performSegue(withIdentifier: "GoToRegister", sender: self)
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToReister" {
+        if segue.identifier == "GoToRegister" {
             guard let resultVC = segue.destination as? RegisterViewController else { return }
         } else {
             guard let resultVC = segue.destination as? LoginViewController else { return }
