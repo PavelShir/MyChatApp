@@ -30,6 +30,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logInButton:" destination="Tim-3B-f4n" eventType="touchUpInside" id="io0-ee-6b9"/>
+                                    <segue destination="5v2-hE-4Ub" kind="show" identifier="GoToLogin" id="ipl-Su-gKs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7D-jv-BlJ">
@@ -54,6 +55,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButton:" destination="Tim-3B-f4n" eventType="touchUpInside" id="pLO-dl-G2k"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GoToRegister" id="8Xz-lv-r97"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,8 +77,6 @@
                     <navigationItem key="navigationItem" id="fzO-Uq-nsg"/>
                     <connections>
                         <outlet property="titleLabel" destination="y7D-jv-BlJ" id="7U9-Ah-qfi"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="GoToRegister" id="zqF-Af-HVx"/>
-                        <segue destination="5v2-hE-4Ub" kind="show" identifier="GoToLogin" id="1fE-hy-y66"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0w-oB-wTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

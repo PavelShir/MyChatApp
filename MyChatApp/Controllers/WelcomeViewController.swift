@@ -17,22 +17,38 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        titleAnimation()
        
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "GoToRegister", sender: self)
+       // performSegue(withIdentifier: "GoToRegister", sender: self)
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "GoToLogin", sender: self)
+       // performSegue(withIdentifier: "GoToLogin", sender: self)
     }
     
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "GoToRegister" {
             guard let resultVC = segue.destination as? RegisterViewController else { return }
         } else {
             guard let resultVC = segue.destination as? LoginViewController else { return }
+        }
+    }
+     */
+    
+    func titleAnimation() {
+        titleLabel.text = ""
+        titleLabel.font = .boldSystemFont(ofSize: 50)
+        var charIndex = 0.0
+        let titleText = "⚡️FlashChat"
+        for letter in titleText {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
+                self.titleLabel.text?.append(letter)
+            }
+            charIndex += 1
         }
     }
 
