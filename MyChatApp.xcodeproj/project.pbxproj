@@ -49,7 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				0B62819D235F0F4D00E35CAF /* README.md */,
-				0B628175235DEE8100E35CAF /* Flash Chat iOS13 */,
+				0B628175235DEE8100E35CAF /* MyChatApp */,
 				0B628174235DEE8100E35CAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B628175235DEE8100E35CAF /* Flash Chat iOS13 */ = {
+		0B628175235DEE8100E35CAF /* MyChatApp */ = {
 			isa = PBXGroup;
 			children = (
 				0B628176235DEE8100E35CAF /* AppDelegate.swift */,
@@ -73,7 +73,7 @@
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
 			);
-			path = "Flash Chat iOS13";
+			path = MyChatApp;
 			sourceTree = "<group>";
 		};
 		0B628192235DF02000E35CAF /* Controllers */ = {
