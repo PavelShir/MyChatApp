@@ -18,33 +18,25 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
        
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
-       // performSegue(withIdentifier: "GoToRegister", sender: self)
+       
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-       // performSegue(withIdentifier: "GoToLogin", sender: self)
+       
     }
     
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToRegister" {
-            guard let resultVC = segue.destination as? RegisterViewController else { return }
-        } else {
-            guard let resultVC = segue.destination as? LoginViewController else { return }
-        }
-    }
-     */
+   
     
     func titleAnimation() {
         titleLabel.text = ""
         titleLabel.font = .boldSystemFont(ofSize: 50)
         var charIndex = 0.0
-        let titleText = "⚡️FlashChat"
+        let titleText = K.appName
         for letter in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)
