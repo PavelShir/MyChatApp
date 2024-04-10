@@ -51,6 +51,9 @@
 		313B3BBE2BC5C801004B837D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 313B3BBD2BC5C801004B837D /* FirebaseStorage */; };
 		313B3BC02BC5C801004B837D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 313B3BBF2BC5C801004B837D /* FirebaseStorageCombine-Community */; };
 		31698F842BC7117B00AB6E11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31698F832BC7117B00AB6E11 /* Constants.swift */; };
+		31698F862BC7140400AB6E11 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31698F852BC7140400AB6E11 /* Message.swift */; };
+		31698F892BC71B1F00AB6E11 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31698F872BC71B1F00AB6E11 /* MessageCell.swift */; };
+		31698F8A2BC71B1F00AB6E11 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31698F882BC71B1F00AB6E11 /* MessageCell.xib */; };
 		A91604DE93C84AEAFE01C1D7 /* Pods_MyChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F8EBB3064E8A88CFABC82C /* Pods_MyChatApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		313B3B892BC2D89D004B837D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		31698F832BC7117B00AB6E11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		31698F852BC7140400AB6E11 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = MyChatApp/Message.swift; sourceTree = SOURCE_ROOT; };
+		31698F872BC71B1F00AB6E11 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		31698F882BC71B1F00AB6E11 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		4B361F41CFC8DF48CF93DEB3 /* Pods-MyChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChatApp.debug.xcconfig"; path = "Target Support Files/Pods-MyChatApp/Pods-MyChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		73F8EBB3064E8A88CFABC82C /* Pods_MyChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB703DB8FCFC5BB243AF32EC /* Pods-MyChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChatApp.release.xcconfig"; path = "Target Support Files/Pods-MyChatApp/Pods-MyChatApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 				0B62818C235DF00B00E35CAF /* RegisterViewController.swift */,
 				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
 				0B628190235DF01B00E35CAF /* ChatViewController.swift */,
+				31698F872BC71B1F00AB6E11 /* MessageCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
+				31698F882BC71B1F00AB6E11 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				31698F852BC7140400AB6E11 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				313B3B8A2BC2D89D004B837D /* GoogleService-Info.plist in Resources */,
+				31698F8A2BC71B1F00AB6E11 /* MessageCell.xib in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 			);
@@ -356,7 +366,9 @@
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				31698F892BC71B1F00AB6E11 /* MessageCell.swift in Sources */,
 				31698F842BC7117B00AB6E11 /* Constants.swift in Sources */,
+				31698F862BC7140400AB6E11 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 			);
